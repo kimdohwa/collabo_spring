@@ -22,9 +22,9 @@ public class FruitController {
     @GetMapping("/Fruit/list")
     public List<Fruit> test02(){
         List<Fruit> fruitList = new ArrayList<>();
-        fruitList.add(new Fruit("apple","사과",100));
-        fruitList.add(new Fruit("pear","배",200));
-        fruitList.add(new Fruit("grape","포도",300));
+        fruitList.add(new Fruit("apple","사과",1000));
+        fruitList.add(new Fruit("pear","배",2000));
+        fruitList.add(new Fruit("grape","포도",3000));
         return fruitList;
     }
 }
