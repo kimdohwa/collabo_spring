@@ -4,6 +4,7 @@ import com.coffee.constant.Role;
 import com.coffee.entity.Member;
 import com.coffee.repository.MemberRepository;
 import org.junit.jupiter.api.DisplayName;
+import org.junit.jupiter.api.Test;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.test.context.SpringBootTest;
 
@@ -14,7 +15,7 @@ public class MemberTest {
     @Autowired //의존하고있는 객체를 외부에서 자동주입합니다.
     private MemberRepository memberRepository;
 
-//    @Test
+    @Test
     @DisplayName("회원 몇명 추가하기")
     public void insertMemberList() {
         //회원 몇 명을 추가해 봅니다.
