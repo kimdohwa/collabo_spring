@@ -11,7 +11,13 @@ import java.time.LocalDate;
 @Service //서비스 역할을 하며, 주로 로직처리에 활용되는 자바클래스입니다.
 @RequiredArgsConstructor
 public class MemberService {
+
     private final MemberRepository memberRepository ;
+
+    //    public MemberService(MemberRepository memberRepository) {
+//    this.memberRepository = memberRepository;
+//}
+
     public Member findByEmail(String email) {
         return memberRepository.findByEmail(email);
     }
